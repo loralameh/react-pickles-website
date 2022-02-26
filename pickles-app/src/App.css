@@ -164,7 +164,7 @@ nav {
 .logo {
   height: 40px;
 }
-.links button {
+.link-btn {
   color: var(--clr-grey-3);
   background-color: transparent;
   font-size: 1rem;
@@ -175,7 +175,22 @@ nav {
   border-style: none;
   transition: var(--transition);
 }
-.links button:hover {
+.link-btn:hover {
+  background: var(--clr-primary-9);
+  color: var(--clr-primary-2);
+}
+.links {
+  color: var(--clr-grey-3);
+  background-color: transparent;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  border-style: none;
+  transition: var(--transition);
+}
+.links Link:hover {
   background: var(--clr-primary-9);
   color: var(--clr-primary-2);
 }

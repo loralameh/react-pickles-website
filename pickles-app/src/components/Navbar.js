@@ -3,6 +3,7 @@ import logo from '../logo.svg'
 import { FaBars } from 'react-icons/fa'
 import { useGlobalContext } from '../context'
 import { useRef, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const linksContainerRef = useRef(null)
@@ -28,13 +29,19 @@ const Navbar = () => {
         <div className='links-container' ref={linksContainerRef}>
           <ul className='links' ref={linksRef}>
             <li>
-              <button className='link-btn'>Home</button>
+              <Link className='link-btn' to='/'>
+                Home
+              </Link>
             </li>
             <li>
-              <button className='link-btn'>All Products</button>
+              <Link className='link-btn' to='/products'>
+                All Products
+              </Link>
             </li>
             <li>
-              <button className='link-btn'>About Us</button>
+              <Link className='link-btn' to='/about'>
+                About Us
+              </Link>
             </li>
           </ul>
         </div>
