@@ -7,7 +7,6 @@ const Staff = () => {
   const { useFetch, useSlider } = useGlobalContext()
   const { loading, data } = useFetch(url)
   const { index, setIndex, listLength } = useSlider(url)
-  let position = 'nextSlide'
   if (loading) return <h3>loading...</h3>
   else
     return (

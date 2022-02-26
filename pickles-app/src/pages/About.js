@@ -1,5 +1,6 @@
 import React from 'react'
 import Staff from '../components/Staff'
+import Footer from '../components/Footer'
 const About = () => {
   return (
     <>
