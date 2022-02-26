@@ -34,8 +34,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link className='link-btn' to='/products'>
-                All Products
+              <Link className='link-btn' to='/contact'>
+                Contact Us
               </Link>
             </li>
             <li>
