@@ -24,6 +24,29 @@ const AppProvider = ({ children }) => {
     }, [url])
     return { loading, data }
   }
+  const useSlider = (data) => {
+    const [item, setitem] = useState(data)
+    const [index, setIndex] = useState(0)
+    const listLength = item.length
+    useEffect(() => {
+      const lastIndex = item.length - 1
+      if (index < 0) {
+        setIndex(lastIndex)
+      }
+      if (index > lastIndex) {
+        setIndex(0)
+      }
+    }, [index, item])
+    useEffect(() => {
+      let slider = setInterval(() => {
+        setIndex(index + 1)
+      }, 5000)
+      return () => {
+        clearInterval(slider)
+      }
+    }, [index])
+    return { index, setIndex, listLength }
+  }
   return (
     <AppContext.Provider
       value={{
@@ -31,6 +54,7 @@ const AppProvider = ({ children }) => {
         setIsNavbarShown,
         isNavbarShown,
         useFetch,
+        useSlider,
       }}
     >
       {children}
