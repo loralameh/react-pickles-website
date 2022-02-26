@@ -255,8 +255,6 @@ footer {
 }
 .foot {
   width: 100%;
-  position: absolute;
-  bottom: 0;
   align-items: center;
 }
 .foot-center {
@@ -438,4 +436,29 @@ article.lastSlide {
 }
 article.nextSlide {
   transform: translateX(100%);
+}
+
+/*
+=============== 
+product
+===============
+*/
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-details {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--clr-grey-7);
+}
+.product-img {
+  border-radius: 20%;
+  margin-bottom: 1rem;
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border: 4px solid var(--clr-grey-8);
+  box-shadow: var(--dark-shadow);
 }
