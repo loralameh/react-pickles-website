@@ -9,18 +9,20 @@ import Error from './pages/Error'
 // import components
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Product from './components/Product'
 
 function App() {
   return (
     <>
       <Navbar />
-      <Footer />
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='about' element={<About />}></Route>
         <Route path='products' element={<Products />}></Route>
+        <Route path='products/:id' element={<Product />} />
         <Route path='*' element={<Error />}></Route>
       </Routes>
+      <Footer />
     </>
   )
 }
