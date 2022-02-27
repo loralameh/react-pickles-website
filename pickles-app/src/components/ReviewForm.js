@@ -65,8 +65,10 @@ const Contact = () => {
         )}
         <button type='submit'> add</button>
       </form>
-      <h2>See what others say</h2>
-      <AllReviews state={state} />
+      <div className='container'>
+        <h2>See what others say</h2>
+        <AllReviews state={state} />
+      </div>
     </>
   )
 }
