@@ -123,7 +123,7 @@ p {
 
 /* section */
 .section {
-  width: 90vw;
+  width: 100%;
   margin: 0 auto;
   max-width: var(--max-width);
 }
@@ -317,8 +317,10 @@ Error
   justify-content: center;
 }
 .error-container {
+  padding: 5rem;
   text-align: center;
   text-transform: capitalize;
+  height: 27.5rem;
 }
 
 /*

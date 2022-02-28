@@ -6,15 +6,12 @@ const Home = () => {
       <div className='section'>
         <div className='section-center'>
           <img
-            src='https://images.pexels.com/photos/6611594/pexels-photo-6611594.jpeg?cs=srgb&dl=pexels-dale-jackson-6611594.jpg&fm=jpg'
+            src='https://images.pexels.com/photos/8879387/pexels-photo-8879387.jpeg?cs=srgb&dl=pexels-ron-lach-8879387.jpg&fm=jpg'
             alt='header'
           />
         </div>
       </div>
       <Products />
-      {/* slider for products */}
-      {/* slider for reviews */}
-      {/* form to add a review */}
     </div>
   )
 }

@@ -28,6 +28,8 @@ const AppProvider = ({ children }) => {
     const [item, setitem] = useState(data)
     const [index, setIndex] = useState(0)
     const listLength = item.length
+
+    // resetting  so we don't have negative index and an index greater than the length of the array.
     useEffect(() => {
       const lastIndex = item.length - 1
       if (index < 0) {
@@ -37,6 +39,7 @@ const AppProvider = ({ children }) => {
         setIndex(0)
       }
     }, [index, item])
+
     useEffect(() => {
       let slider = setInterval(() => {
         setIndex(index + 1)
@@ -65,4 +68,6 @@ export const useGlobalContext = () => {
   return useContext(AppContext)
 }
 
-export { AppContext, AppProvider }
+export { AppProvider }
+
+// const { useSlider } = useContext(AppContext)

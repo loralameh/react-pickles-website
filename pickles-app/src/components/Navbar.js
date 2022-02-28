@@ -9,8 +9,10 @@ const Navbar = () => {
   const linksContainerRef = useRef(null)
   const linksRef = useRef(null)
   const { isNavbarShown, ToggleNavbar } = useGlobalContext()
+
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height
+
     if (isNavbarShown) {
       linksContainerRef.current.style.height = `${linksHeight}px`
     } else {

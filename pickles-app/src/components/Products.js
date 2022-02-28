@@ -5,7 +5,7 @@ import products from '../data-products'
 import { Link } from 'react-router-dom'
 
 const Products = () => {
-  const { useSlider, useFetch } = useGlobalContext()
+  const { useSlider } = useGlobalContext()
   const { index, setIndex, listLength } = useSlider(products)
 
   return (
